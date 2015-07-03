@@ -8,6 +8,10 @@ class Base {
   get type() {
     return this._type;
   }
+
+  get name() {
+    return this._name;
+  }
 }
 
 class Bundle extends Base {
@@ -15,6 +19,21 @@ class Bundle extends Base {
     super("Bundle");
     this._name = spec.name;
     this._offers = [];
-    spec.offers.each(offer => this._offers.push(new Offer(offer)));
+    spec.offers.map(offer => this._offers.push(new Offer(offer)));
   } 
 }
+
+class Offer extends Base {
+  constructor(spec) {
+    super("Offer");
+    this._name = spec.name;
+  }
+}
+
+window.bundle = new Bundle({
+  name : "Super bundle",
+  offers : [
+    {name : "Good offer"},
+    {name : "Bad offer"}    
+  ]
+});
