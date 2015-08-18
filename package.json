@@ -2,7 +2,7 @@
   "name": "jspm-playground",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,5 +15,22 @@
   "bugs": {
     "url": "https://github.com/mtiitson/playground/issues"
   },
-  "homepage": "https://github.com/mtiitson/playground#readme"
+  "homepage": "https://github.com/mtiitson/playground#readme",
+  "devDependencies": {
+    "babel": "^5.8.21",
+    "jspm": "^0.16.0"
+  },
+  "jspm": {
+    "directories": {},
+    "dependencies": {
+      "jquery": "github:components/jquery@^2.1.4",
+      "react": "npm:react@0.14.0-beta3",
+      "react-dom": "npm:react-dom@0.14.0-beta3"
+    },
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.8.22",
+      "babel-runtime": "npm:babel-runtime@^5.8.20",
+      "core-js": "npm:core-js@^1.1.0"
+    }
+  }
 }

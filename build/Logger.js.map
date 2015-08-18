@@ -1,0 +1,1 @@
+{"version":3,"sources":["../lib/Logger.js"],"names":[],"mappings":";;;;;;;;;;IAAqB,MAAM;AACd,WADQ,MAAM,GACX;0BADK,MAAM;GAExB;;eAFkB,MAAM;;WAGtB,aAAC,OAAO,EAAE;AACX,aAAO,CAAC,GAAG,CAAC,OAAO,CAAC,CAAC;KACtB;;;SALkB,MAAM;;;qBAAN,MAAM","file":"Logger.js","sourcesContent":["export default class Logger {\n  constructor() {\n  }\n  log(message) {\n    console.log(message);\n  }\n}\n"]}
